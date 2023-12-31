@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 import { MyRevPipe } from './my-rev.pipe';
+import { MyAddPipe } from './my-add.pipe';
+import { MyMultPipe } from './my-mult.pipe';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MyRevPipe],
+  imports: [CommonModule, RouterOutlet, MyRevPipe, MyAddPipe, MyMultPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
